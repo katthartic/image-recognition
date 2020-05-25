@@ -22,7 +22,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
-    }
+      "supportsTablet": true,
+      "bundleIdentifier": "com.brooklynbaum.image-recognition"
+    },
+    "android": {
+      "package": "com.brooklynbaum.image-recognition"
+    },
+    "entryPoint": "node_modules/expo/AppEntry.js"
   }
 }
