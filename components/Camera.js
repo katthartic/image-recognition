@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { RNCamera } from 'react-native-camera'
 import { Dimensions, Alert, StyleSheet, ActivityIndicator } from 'react-native'
+import CaptureButton from './CaptureButton'
 
 const Camera = (props) => {
   const [identifiedAs, setIdentifiedAs] = useState('')
@@ -49,7 +50,7 @@ const Camera = (props) => {
         size="large"
         style={styles.loadingIndicator}
         color="#fff"
-        animating={state.loading}
+        animating={loading}
       />
       <CaptureButton buttonDisabled={loading} onClick={takePicture} />
     </RNCamera>
