@@ -41,7 +41,7 @@ const Camera = (props) => {
   }
 
   return (
-    <RNCamera
+    <Camera
       ref={(ref) => {
         camera = ref
       }}
@@ -53,7 +53,7 @@ const Camera = (props) => {
         animating={loading}
       />
       <CaptureButton buttonDisabled={loading} onClick={takePicture} />
-    </RNCamera>
+    </Camera>
   )
 }
 
